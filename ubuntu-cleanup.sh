@@ -1,6 +1,21 @@
 # mkdir -p ~/bin
 # nano ~/bin/ubuntu-cleanup.sh
 
+# Make it executable
+# chmod +x ~/bin/ubuntu-cleanup.sh
+
+# 4. Run whenever necessary
+# ~/bin/ubuntu-cleanup.sh
+
+# Create a shorter command
+# nano ~/.bashrc
+# Add this at the bottom:
+# alias cleanup='~/bin/ubuntu-cleanup.sh'
+# Reload:
+# source ~/.bashrc
+# Now you can simply execute:
+# cleanup
+
 #!/usr/bin/env bash
 
 set -Eeuo pipefail
